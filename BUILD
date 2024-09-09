@@ -10,7 +10,7 @@ cc_test(
     copts = [ "-pedantic","-DUSE_VAR"],
     srcs = ["main.cpp"],
     visibility = ["//visibility:public"],
-
+    tags=["no-sandbox"]
 )
 
 cc_test(
